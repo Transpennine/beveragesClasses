@@ -2,11 +2,11 @@
 #include <iostream>
 #include "beverage.h"
 #include <string>
-#include <vector>
+
 using namespace std;
-string roastTypes[6] = { "Light", "Medium", "Dark", "French", "Espresso" };	//array of available roast types
 class Coffee : public Beverage {
 private: 
+	string roastTypes[6] = { " ", "Light", "Medium", "Dark", "French", "Espresso" };	//array of available roast types
 	bool iced;	//ice(true)-no ice(false)
 	bool caffeine;	//caffeinated(true)-decaf(false)
 	bool creamer;	//creamer(true)-no creamer(false)
@@ -23,7 +23,8 @@ public:
 	string getRoast();	//returns the type of roast
 	void coffeeToString();	//returns the complete description of the drink
 	//mutator function prototypes
-	Coffee(int);	//constructor for the coffee drink
+	Coffee(int, int, int, int, int);	//constructor for the coffee drink
+	Coffee();
 	void setIce(int);	//change iced/not iced
 	void setCaffeine(int);	//change caffeinated/decaf
 	void setCreamer(int);	//change creamer/no creamer
