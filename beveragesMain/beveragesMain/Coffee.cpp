@@ -77,8 +77,19 @@ string Coffee::getRoast() {	//function returns the matching member of the roastT
 }
 
 //mutator function definitions
-Coffee::Coffee(int iced) {
+Coffee::Coffee(int iced, int caffeinated, int creamer, int sweet, int roast) {
 	setIce(iced);
+	setCaffeine(caffeinated);
+	setCreamer(creamer);
+	setSweetener(sweet);
+	setRoastType(roast);
+}
+Coffee::Coffee() {
+	iced = false;
+	caffeine = true;
+	creamer = false;
+	sweetener = false;
+	roastType = 2;
 }
 void Coffee::setIce(int ifIce) {	//function sets coffee type to iced if user chooses 1 and not iced if user chooses iced
 	try {
@@ -150,8 +161,8 @@ void Coffee::setFlavor(string newFlavor) {	//sets the value of private member fl
 void Coffee::setRoastType(int newRoast) {	//sets the value of "roastType" member to an integer. The integer will hava a matching string in the roastTypes array
 	roastType = newRoast;	
 }
-void Coffee::coffeeToString() {
+void Coffee::coffeeToString() {	//this function prints info from Beverage class and additional info from Coffee class
 	toString();
 	cout << endl << getIced() << endl << getCaffeine() << endl << getCreamer() << endl << getSweetener() << endl;
-	cout << "Flavor: " << getFlavor() << endl << "Roast Type: " << getRoast() << endl;
+	cout << "Roast Type: " << getRoast() << endl;
 }
