@@ -8,8 +8,12 @@ string Beverage::getName() {	//returns the name of the drink
 string Beverage::getDescription() {	//returns description of the beverage
 	return description;
 }
-string Beverage::toString() {	//returns the description of all attributes of Beverage class
-	return getName();
+void Beverage::toString() {	//returns the description of all attributes of Beverage class
+	cout << name << endl;
+	cout << "Description: " << getDescription() << endl;
+	cout << "Serving Size: " << getServingSize() << "oz." << endl;
+	cout << "Calories: " << getCalories() << endl;
+	cout << "Price: $" << getPrice() << endl;
 }
 int Beverage::getServingSize() {
 	return servingSize;	//returns the serving size of the beverage (format to oz)
@@ -22,8 +26,12 @@ float Beverage::getPrice() {
 }
 
 //mutator funcsetion definitions
-Beverage::Beverage() {
-	name = " Heya";
+Beverage::Beverage() {	//default constructor set to display water
+	name = "Water";
+	description = " ";
+	servingSize = 8;
+	calories = 0;
+	price = 0.0;
 }
 Beverage::Beverage(string newName, string newDescription, int newServingSize, int newCalories, float newPrice) {
 	setName(newName);
