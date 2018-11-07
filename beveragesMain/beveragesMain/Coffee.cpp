@@ -69,9 +69,6 @@ string Coffee::getSweetener() {	//function returns "sweetener added" if sweetene
 		cout << e.what() << endl;
 	}
 }
-string Coffee::getFlavor() {	//funciton returns user-entered flavor of the drink
-	return flavor;
-}
 string Coffee::getRoast() {	//function returns the matching member of the roastTypes array
 	return roastTypes[roastType];
 }
@@ -155,14 +152,11 @@ void Coffee::setSweetener(int ifSweet) {	//function sets the value of "sweetener
 		cout << e.what() << endl;
 	}
 }
-void Coffee::setFlavor(string newFlavor) {	//sets the value of private member flavor to the user-defined value
-	flavor = newFlavor;
-}
 void Coffee::setRoastType(int newRoast) {	//sets the value of "roastType" member to an integer. The integer will hava a matching string in the roastTypes array
 	roastType = newRoast;	
 }
-void Coffee::coffeeToString() {	//this function prints info from Beverage class and additional info from Coffee class
-	toString();
+void Coffee::toString() {	//this function prints info from Beverage class and additional info from Coffee class
+	Beverage::toString();
 	cout << endl << getIced() << endl << getCaffeine() << endl << getCreamer() << endl << getSweetener() << endl;
 	cout << "Roast Type: " << getRoast() << endl;
 }
