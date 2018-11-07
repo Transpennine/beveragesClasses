@@ -24,12 +24,30 @@
     <ClCompile Include="Coffee.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Tea.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Soda.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EnergyDrink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="beverage.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Coffee.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Tea.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Soda.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EnergyDrink.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
