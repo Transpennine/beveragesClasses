@@ -117,11 +117,17 @@
   <ItemGroup>
     <ClCompile Include="beverage.cpp" />
     <ClCompile Include="Coffee.cpp" />
+    <ClCompile Include="EnergyDrink.cpp" />
+    <ClCompile Include="Soda.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Tea.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="beverage.h" />
     <ClInclude Include="Coffee.h" />
+    <ClInclude Include="EnergyDrink.h" />
+    <ClInclude Include="Soda.h" />
+    <ClInclude Include="Tea.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
