@@ -19,9 +19,8 @@ public:
 	string getCaffeine();	//function returns string definition of caffein/decaf
 	string getCreamer();	//function returns string definition of creamer/no creamer
 	string getSweetener();//function returns string definition of sweet/unsweet
-	string getFlavor();	//funciton returns flavor
 	string getRoast();	//returns the type of roast
-	void coffeeToString();	//returns the complete description of the drink
+	void toString();	//returns the complete description of the drink
 	//mutator function prototypes
 	Coffee(int, int, int, int, int);	//constructor for the coffee drink
 	Coffee();
@@ -29,7 +28,6 @@ public:
 	void setCaffeine(int);	//change caffeinated/decaf
 	void setCreamer(int);	//change creamer/no creamer
 	void setSweetener(int);//change sweetener/unsweet
-	void setFlavor(string);	//define flavor
 	void setRoastType(int);	//set roast type
 	
 };
